@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OauthSSOJwtTodoApiBackend", "OauthSSOJwtTodoApiBackend\OauthSSOJwtTodoApiBackend.csproj", "{418A3012-5D9E-CD4C-6AE8-948820408D57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OauthSSOJwtTodoApiBackend.Tests.xUnit", "OauthSSOJwtTodoApiBackend.Tests.xUnit\OauthSSOJwtTodoApiBackend.Tests.xUnit.csproj", "{A45E676A-4EDB-FFA1-54DD-ED1EE558F541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{418A3012-5D9E-CD4C-6AE8-948820408D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418A3012-5D9E-CD4C-6AE8-948820408D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418A3012-5D9E-CD4C-6AE8-948820408D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418A3012-5D9E-CD4C-6AE8-948820408D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45E676A-4EDB-FFA1-54DD-ED1EE558F541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45E676A-4EDB-FFA1-54DD-ED1EE558F541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45E676A-4EDB-FFA1-54DD-ED1EE558F541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45E676A-4EDB-FFA1-54DD-ED1EE558F541}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BFB6A20-B4F3-4BFE-B273-4FF415AF8F6B}
+	EndGlobalSection
+EndGlobal

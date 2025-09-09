@@ -1,0 +1,314 @@
+﻿{
+  "users": [
+    {
+      "id": "5f9d2aa3-babf-400e-8796-71eb42c1a111",
+      "username": "alice_admin",
+      "email": "alice.admin@example.com",
+      "password": "AliceAdmin123!",
+      "role": "Admin"
+    },
+    {
+      "id": "7e6f10a4-0c71-4c63-8b73-4f82b4bfc222",
+      "username": "bob_dev",
+      "email": "bob.dev@example.com",
+      "password": "BobDevSecure1#",
+      "role": "Admin"
+    },
+    {
+      "id": "2bfc15d4-e2aa-4e30-96b0-597340ae1333",
+      "username": "charlie_pm",
+      "email": "charlie.pm@example.com",
+      "password": "PMcharlie2024!",
+      "role": "Admin"
+    },
+    {
+      "id": "4a1bc7dd-8a7d-4b7e-a5e2-4d001f081444",
+      "username": "dana_ops",
+      "email": "dana.ops@example.com",
+      "password": "OpsDana#9",
+      "role": "User"
+    },
+    {
+      "id": "88cd2c4f-e3b2-4a3f-9b59-dc2fd4bfa555",
+      "username": "eric_eng",
+      "email": "eric.eng@example.com",
+      "password": "EricEng$$33",
+      "role": "Manager"
+    },
+    {
+      "id": "a9bc1dd0-15ee-4a0f-b223-b1b2cba7c666",
+      "username": "fiona_qa",
+      "email": "fiona.qa@example.com",
+      "password": "QAfiona22!",
+      "role": "User"
+    },
+    {
+      "id": "e91a73a0-7f7d-46be-b197-8d6ab7ee7777",
+      "username": "gavin_ui",
+      "email": "gavin.ui@example.com",
+      "password": "UIgavin2024!",
+      "role": "Manager"
+    },
+    {
+      "id": "fd4b84e1-faaa-4538-a39c-c3a746af8888",
+      "username": "hannah_db",
+      "email": "hannah.db@example.com",
+      "password": "DbHannah#44",
+      "role": "User"
+    },
+    {
+      "id": "abce47dc-779b-4a3f-a913-51d803b59999",
+      "username": "ian_net",
+      "email": "ian.net@example.com",
+      "password": "IanNET8*Secure",
+      "role": "User"
+    },
+    {
+      "id": "25db1a36-20c4-4b53-a3e4-7869289aa000",
+      "username": "julie_cloud",
+      "email": "julie.cloud@example.com",
+      "password": "CloudJulie!8",
+      "role": "User"
+    },
+    {
+      "id": "ccdd4455-3344-44ab-ae77-998877665511",
+      "username": "ken_design",
+      "email": "ken.design@example.com",
+      "password": "KenDesign#2025",
+      "role": "User"
+    },
+    {
+      "id": "1188abcd-1234-4567-a1b2-998877665500",
+      "username": "lucy_hr",
+      "email": "lucy.hr@example.com",
+      "password": "HRlucy$pass",
+      "role": "User"
+    },
+    {
+      "id": "99999999-9999-4444-bbbb-121212121212",
+      "username": "mike_support",
+      "email": "mike.support@example.com",
+      "password": "SupportMike99!",
+      "role": "User"
+    },
+    {
+      "id": "88888888-1111-4444-cccc-343434343434",
+      "username": "nina_sales",
+      "email": "nina.sales@example.com",
+      "password": "NinaSales123@",
+      "role": "User"
+    },
+    {
+      "id": "77777777-2222-4444-dddd-565656565656",
+      "username": "oliver_marketing",
+      "email": "oliver.marketing@example.com",
+      "password": "OliverMKT2025!",
+      "role": "User"
+    }
+  ],
+  "todos": [
+    {
+      "id": "b101ef11-aaa0-4d70-8fc7-0d5ae1e1aaa1",
+      "title": "Review authentication flow",
+      "description": "Check LinkedIn OAuth + PKCE exchange process.",
+      "completed": false,
+      "userId": "5f9d2aa3-babf-400e-8796-71eb42c1a111"
+    },
+    {
+      "id": "c202de22-bbb1-4a1e-88e9-102f01e1bbb2",
+      "title": "Implement refresh tokens",
+      "description": "Persist and rotate tokens securely for users.",
+      "completed": true,
+      "userId": "5f9d2aa3-babf-400e-8796-71eb42c1a111"
+    },
+    {
+      "id": "d303cd33-ccc2-4f2f-85ab-203f11e1ccc3",
+      "title": "Create Swagger UI setup",
+      "description": "Enable Swagger with JWT auth support.",
+      "completed": false,
+      "userId": "7e6f10a4-0c71-4c63-8b73-4f82b4bfc222"
+    },
+    {
+      "id": "e404bc44-ddd3-4c30-88cc-304f21e1ddd4",
+      "title": "Add role-based access control",
+      "description": "Restrict certain endpoints to Admins.",
+      "completed": true,
+      "userId": "7e6f10a4-0c71-4c63-8b73-4f82b4bfc222"
+    },
+    {
+      "id": "f505ab55-eee4-4e50-811d-405f31e1eee5",
+      "title": "Refactor TodoService for async",
+      "description": "Ensure all methods are async and awaitable.",
+      "completed": false,
+      "userId": "2bfc15d4-e2aa-4e30-96b0-597340ae1333"
+    },
+    {
+      "id": "aa6f10e6-9a9e-4ec6-90c0-706f11e19996",
+      "title": "Write integration tests",
+      "description": "Cover login and todo creation flows.",
+      "completed": false,
+      "userId": "2bfc15d4-e2aa-4e30-96b0-597340ae1333"
+    },
+    {
+      "id": "db0b7fa7-9b1f-48e5-9e90-111122223333",
+      "title": "Configure CORS policy",
+      "description": "Allow Angular SPA to access API.",
+      "completed": true,
+      "userId": "4a1bc7dd-8a7d-4b7e-a5e2-4d001f081444"
+    },
+    {
+      "id": "ee1c8ab8-2c2f-41c6-a91a-222233334444",
+      "title": "Clean up Program.cs",
+      "description": "Organize DI and middleware registration.",
+      "completed": false,
+      "userId": "4a1bc7dd-8a7d-4b7e-a5e2-4d001f081444"
+    },
+    {
+      "id": "ff2d9bc9-3d3f-4df7-b92b-333344445555",
+      "title": "Seed database on startup",
+      "description": "Use SeedData.json to initialize users and todos.",
+      "completed": true,
+      "userId": "88cd2c4f-e3b2-4a3f-9b59-dc2fd4bfa555"
+    },
+    {
+      "id": "111eacda-4e4f-4b80-ba3c-444455556666",
+      "title": "Test unauthorized access",
+      "description": "Verify 401 responses on protected routes.",
+      "completed": false,
+      "userId": "88cd2c4f-e3b2-4a3f-9b59-dc2fd4bfa555"
+    },
+    {
+      "id": "222fbdeb-5f5f-49f1-bb4d-555566667777",
+      "title": "Document API endpoints",
+      "description": "Add OpenAPI descriptions and summaries.",
+      "completed": false,
+      "userId": "a9bc1dd0-15ee-4a0f-b223-b1b2cba7c666"
+    },
+    {
+      "id": "3331c0fc-6a6f-4b10-bc5e-666677778888",
+      "title": "Hash passwords",
+      "description": "Ensure passwords are never stored in plaintext.",
+      "completed": true,
+      "userId": "a9bc1dd0-15ee-4a0f-b223-b1b2cba7c666"
+    },
+    {
+      "id": "4442d1ad-7b7f-4c21-cd6f-777788889999",
+      "title": "Setup database migrations",
+      "description": "Support EF Core migrations for all providers.",
+      "completed": true,
+      "userId": "e91a73a0-7f7d-46be-b197-8d6ab7ee7777"
+    },
+    {
+      "id": "5553e2be-8c8f-4d32-de70-888899990000",
+      "title": "Build user info endpoint",
+      "description": "Expose current user info from JWT.",
+      "completed": false,
+      "userId": "e91a73a0-7f7d-46be-b197-8d6ab7ee7777"
+    },
+    {
+      "id": "6664f3cf-9d9f-4e43-ef81-999900001111",
+      "title": "Design error handling middleware",
+      "description": "Return structured errors from exceptions.",
+      "completed": true,
+      "userId": "fd4b84e1-faaa-4538-a39c-c3a746af8888"
+    },
+    {
+      "id": "777504d0-aeaf-4f54-fa92-000011112222",
+      "title": "Test rate limiting logic",
+      "description": "Simulate API overuse and validate 429.",
+      "completed": false,
+      "userId": "fd4b84e1-faaa-4538-a39c-c3a746af8888"
+    },
+    {
+      "id": "888615e1-bfbf-4a65-0ba3-111122223333",
+      "title": "Implement logout functionality",
+      "description": "Remove refresh token cookie on logout.",
+      "completed": true,
+      "userId": "abce47dc-779b-4a3f-a913-51d803b59999"
+    },
+    {
+      "id": "999726f2-cfcf-4b76-1cb4-222233334444",
+      "title": "Allow login with email",
+      "description": "Support both email and username login.",
+      "completed": false,
+      "userId": "abce47dc-779b-4a3f-a913-51d803b59999"
+    },
+    {
+      "id": "aaa83703-dfdf-4c87-2dc5-333344445555",
+      "title": "Enable refresh token rotation",
+      "description": "Invalidate old refresh tokens on use.",
+      "completed": true,
+      "userId": "25db1a36-20c4-4b53-a3e4-7869289aa000"
+    },
+    {
+      "id": "bbb94814-efef-4d98-3ed6-444455556666",
+      "title": "Add SameSite=Strict cookie config",
+      "description": "Secure cookies for all auth tokens.",
+      "completed": false,
+      "userId": "25db1a36-20c4-4b53-a3e4-7869289aa000"
+    },
+    {
+      "id": "ccc15925-0f0f-4ea9-4fe7-555566667777",
+      "title": "Encrypt appsettings.json secrets",
+      "description": "Move secrets to environment variables.",
+      "completed": false,
+      "userId": "ccdd4455-3344-44ab-ae77-998877665511"
+    },
+    {
+      "id": "ddd26a36-1a1f-4fba-5ff8-666677778888",
+      "title": "Add email validation",
+      "description": "Ensure valid email format before login.",
+      "completed": true,
+      "userId": "ccdd4455-3344-44ab-ae77-998877665511"
+    },
+    {
+      "id": "eee37b47-2b2f-4fcb-60f9-777788889999",
+      "title": "Fix case-insensitive login",
+      "description": "Normalize usernames and emails.",
+      "completed": true,
+      "userId": "1188abcd-1234-4567-a1b2-998877665500"
+    },
+    {
+      "id": "fff48c58-3c3f-4fdc-7100-888899990000",
+      "title": "Auto-revoke expired refresh tokens",
+      "description": "Clean up old refresh tokens periodically.",
+      "completed": false,
+      "userId": "1188abcd-1234-4567-a1b2-998877665500"
+    },
+    {
+      "id": "00059d69-4d4f-4fed-8211-999900001111",
+      "title": "Add logging to AuthService",
+      "description": "Track auth events and failures.",
+      "completed": true,
+      "userId": "99999999-9999-4444-bbbb-121212121212"
+    },
+    {
+      "id": "1116ae7a-5e5f-4f0e-9322-000011112222",
+      "title": "Log IP addresses for requests",
+      "description": "Store IPs for rate limiting and audit logs.",
+      "completed": true,
+      "userId": "99999999-9999-4444-bbbb-121212121212"
+    },
+    {
+      "id": "2227bf8b-6f6f-4f1f-a433-111122223333",
+      "title": "Optimize EF Core performance",
+      "description": "Add indexes and use async queries.",
+      "completed": false,
+      "userId": "88888888-1111-4444-cccc-343434343434"
+    },
+    {
+      "id": "3338c09c-7070-4f2f-b544-222233334444",
+      "title": "Add dark mode toggle",
+      "description": "Frontend feature to switch themes.",
+      "completed": false,
+      "userId": "88888888-1111-4444-cccc-343434343434"
+    },
+    {
+      "id": "999aaa99-ffff-4f90-802e-505f41e1fff9",
+      "title": "Enable IP rate limiting",
+      "description": "Apply rate limits based on client IP using middleware.",
+      "completed": false,
+      "userId": "77777777-2222-4444-dddd-565656565656"
+    }
+  ]
+}

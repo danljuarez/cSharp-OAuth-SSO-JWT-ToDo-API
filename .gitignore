@@ -3,6 +3,49 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+.git/
+.github/
+
+.vs/
+.editorconfig
+TestResults/
+OauthSSOJwtTodoApiBackend/bin/
+OauthSSOJwtTodoApiBackend/obj/
+OauthSSOJwtTodoApiBackend.Tests.xUnit/bin/
+OauthSSOJwtTodoApiBackend.Tests.xUnit/obj/
+OauthSSOJwtTodoApiBackend.http
+
+obj
+*.suo
+*.user
+*.DotSettings
+
+# Ignore all environment-specific appsettings files
+appsettings.*.json
+
+# But keep the base appsettings.json (optional)
+!appsettings.json
+
+/packages/
+!packages/repositories.config
+
+_NCrunch_*
+*.ncrunchproject
+*.ncrunchsolution
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
 # User-specific files
 *.rsuser
 *.suo
@@ -29,6 +72,7 @@ x86/
 [Aa][Rr][Mm]64/
 [Aa][Rr][Mm]64[Ee][Cc]/
 bld/
+[Bb]in/
 [Oo]bj/
 [Oo]ut/
 [Ll]og/
@@ -403,6 +447,7 @@ FodyWeavers.xsd
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+*.code-workspace
 
 # Local History for Visual Studio Code
 .history/
@@ -416,3 +461,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# JetBrains Rider
+*.sln.iml
