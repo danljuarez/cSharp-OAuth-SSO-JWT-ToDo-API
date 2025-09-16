@@ -35,6 +35,9 @@ public class TodoService : ITodoService
 
     public async Task<(TodoDto? Todo, TodoOperationResult Result)> CreateTodoAsync(Guid userId, CreateTodoDto dto)
     {
+        if (dto is null)
+            throw new ArgumentNullException(nameof(dto));
+
         var todo = new Todo
         {
             Title = dto.Title,
@@ -52,6 +55,9 @@ public class TodoService : ITodoService
 
     public async Task<(TodoDto? Todo, TodoOperationResult Result)> UpdateTodoAsync(Guid userId, Guid todoId, UpdateTodoDto dto)
     {
+        if (dto is null)
+            throw new ArgumentNullException(nameof(dto));
+
         var todo = await _db.Todos.FirstOrDefaultAsync(t => t.Id == todoId && t.UserId == userId);
         if (todo is null)
             return (null, TodoOperationResult.NotFound);
