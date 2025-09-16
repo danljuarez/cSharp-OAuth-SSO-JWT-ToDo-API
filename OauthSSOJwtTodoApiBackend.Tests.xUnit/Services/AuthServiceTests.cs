@@ -1,4 +1,4 @@
-﻿namespace OauthSSOJwtTodoApiBackend.Tests.xUnit;
+﻿namespace OauthSSOJwtTodoApiBackend.Tests.xUnit.Services;
 
 /// <summary>
 // This file contains placeholder unit tests for the AuthService class.
