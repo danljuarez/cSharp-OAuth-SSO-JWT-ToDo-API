@@ -23,12 +23,13 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 
 // Register helpers and services
-builder.Services.AddScoped<JwtHelper>();
+builder.Services.AddScoped<IJwtHelper, JwtHelper>();
 builder.Services.AddScoped<IUserSeeder, UserSeeder>();
 builder.Services.AddScoped<ITodoSeeder, TodoSeeder>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITodoService, TodoService>();
 builder.Services.AddScoped<SeedService>();
+builder.Services.AddHttpClient<AuthService>();
 
 // Logging: Currently using ILogger<T> directly in services.
 // Uncomment the following line to use a custom LoggerService when external log sinks (e.g., Sentry, Seq) are introduced.
