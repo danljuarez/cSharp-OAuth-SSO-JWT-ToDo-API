@@ -1,4 +1,4 @@
-﻿namespace OauthSSOJwtTodoApiBackend.Logging;
+﻿namespace OauthSSOJwtTodoApiBackend.Extensions;
 
 /// <summary>
 /// Extension methods for ILogger to assist handling token truncation for secure and readable logging.
