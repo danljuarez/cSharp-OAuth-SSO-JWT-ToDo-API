@@ -3,8 +3,8 @@ using Microsoft.Extensions.Options;
 using OauthSSOJwtTodoApiBackend.Configuration;
 using OauthSSOJwtTodoApiBackend.Data;
 using OauthSSOJwtTodoApiBackend.Enums;
+using OauthSSOJwtTodoApiBackend.Extensions;
 using OauthSSOJwtTodoApiBackend.Helpers;
-using OauthSSOJwtTodoApiBackend.Logging;
 using OauthSSOJwtTodoApiBackend.Models.DTOs.Auth;
 using OauthSSOJwtTodoApiBackend.Models.Entities;
 using System.Text.Json;
@@ -14,19 +14,21 @@ namespace OauthSSOJwtTodoApiBackend.Services;
 public class AuthService : IAuthService
 {
     private readonly TodoDbContext _db;
-    private readonly JwtHelper _jwtHelper;
+    private readonly IJwtHelper _jwtHelper;
     private readonly ILogger<AuthService> _logger;
     private readonly IWebHostEnvironment _env;
     private readonly IConfiguration _config;
     private readonly TokenSettings _tokenSettings;
+    private readonly HttpClient _httpClient;
 
     public AuthService(
         TodoDbContext db,
-        JwtHelper jwtHelper,
+        IJwtHelper jwtHelper,
         ILogger<AuthService> logger,
         IWebHostEnvironment env,
         IConfiguration config,
-        IOptions<TokenSettings> tokenOptions)
+        IOptions<TokenSettings> tokenOptions,
+        HttpClient httpClient)
     {
         _db = db;
         _jwtHelper = jwtHelper;
@@ -34,6 +36,7 @@ public class AuthService : IAuthService
         _env = env;
         _config = config;
         _tokenSettings = tokenOptions.Value;
+        _httpClient = httpClient;
     }
 
     public async Task<(LoginResultDto? Data, AuthOperationResult Result)> LoginAsync(LoginRequestDto request)
@@ -126,7 +129,7 @@ public class AuthService : IAuthService
             _db.RefreshTokens.Remove(storedToken);
             await _db.SaveChangesAsync();
 
-            _logger.LogTokenInfo("User with refresh token {Token} logged out", refreshToken);
+            _logger.LogTokenInfo("User with refresh token {Token} logged out", _logger.TruncateToken(refreshToken));
             return AuthOperationResult.Success;
         }
 
@@ -180,7 +183,7 @@ public class AuthService : IAuthService
                 { "code_verifier", codeVerifier } // PKCE
             };
 
-            using var client = new HttpClient();
+            using var client = _httpClient;
             var tokenResponse = await client.PostAsync(tokenEndpoint, new FormUrlEncodedContent(values));
 
             if (!tokenResponse.IsSuccessStatusCode)
