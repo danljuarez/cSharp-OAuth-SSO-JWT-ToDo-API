@@ -8,7 +8,7 @@ using System.Text;
 
 namespace OauthSSOJwtTodoApiBackend.Helpers;
 
-public class JwtHelper
+public class JwtHelper : IJwtHelper
 {
     private readonly JwtSettings _jwtSettings;
 
