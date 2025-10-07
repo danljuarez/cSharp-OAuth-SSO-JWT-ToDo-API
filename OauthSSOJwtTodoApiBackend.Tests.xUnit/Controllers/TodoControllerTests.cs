@@ -128,6 +128,27 @@ public class TodoControllerTests
     }
 
     [Fact]
+    public async Task Get_Should_Return_InternalServerError_When_UnexpectedResult()
+    {
+        // Arrange
+        var userId = _controller.User.TryGetUserId();
+        Assert.NotNull(userId);
+
+        var unknownTodoId = Guid.NewGuid();
+
+        _mockTodoService
+            .Setup(s => s.GetTodoByIdAsync(userId.Value, unknownTodoId))
+            .ReturnsAsync((null, (TodoOperationResult)999));
+
+        // Act
+        var result = await _controller.Get(unknownTodoId);
+
+        // Assert
+        var statusCodeResult = Assert.IsType<StatusCodeResult>(result);
+        Assert.Equal(500, statusCodeResult.StatusCode);
+    }
+
+    [Fact]
     public async Task Get_Should_Return_Unauthorized_When_UserId_Claim_Missing()
     {
         // Arrange
