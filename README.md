@@ -3,6 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-in--progress-yellow.svg)](#)
 
+#### Author: Daniel Juarez
+
 This walkthrough offers a technical overview of the `OauthSSOJwtTodoApiBackend` project, intended solely for demonstration purposes. It focuses on authentication strategies, architectural decisions, extensibility, and code quality practices that align with enterprise software development.
 
 ## Overview
